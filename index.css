@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  /* background-color: aqua; */
+}
+
+.main-div {
+  display: flex;
+  align-items: stretch;
+  justify-items: center;
+  width: 100%;
+  max-width: 1080px;
+}
+
+.umbrella-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#umbrella-image {
+  max-width: 350px;
+  max-height: 350px;
+}
+
+.logo-box {
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  z-index: 10;
+  border: 3px solid red;
+  top: auto;
+  bottom: 3rem;
+}
+
+.interaction-box {
+  flex: 1;
+}
+
+.interaction-box h1 {
+  font-size: 3rem;
+}
+
+.color-palette {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.color-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+}
+
+.color-button:focus {
+  border: 5px solid #bbb;
+  outline: none;
+}
+
+#pink {
+  background-color: #d8328b;
+}
+
+#pink:focus {
+  border-color: #d982b1;
+}
+
+#blue {
+  background-color: #30b3e5;
+}
+
+#blue:focus {
+  border-color: #8ac7de;
+}
+
+#yellow {
+  background-color: #fed146;
+}
+
+#yellow:focus {
+  border-color: #f5df98;
+}
+
+#instruction {
+  font-size: 14px;
+  margin: 15px 0;
+}
+
+#upload-button {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  padding: 5px 0;
+  border: none;
+  color: white;
+}
+
+.upload-icon-box {
+  flex: 0.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-icon-box svg {
+  width: 40px;
+}
+
+#upload-text {
+  flex: 1;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
