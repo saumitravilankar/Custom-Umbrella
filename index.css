@@ -74,6 +74,16 @@
   outline: none;
 }
 
+.color-button.pink-active {
+  border: 5px solid #d982b1;
+}
+.color-button.blue-active {
+  border: 5px solid #8ac7de;
+}
+.color-button.yellow-active {
+  border: 5px solid #f5df98;
+}
+
 #pink {
   background-color: #d8328b;
 }
@@ -110,6 +120,7 @@
   padding: 5px 0;
   border: none;
   color: white;
+  cursor: pointer;
 }
 
 .upload-icon-box {
@@ -128,4 +139,9 @@
   letter-spacing: 0.1rem;
   font-size: 1rem;
   font-weight: 600;
+  text-align: center;
+}
+
+#file-upload-input {
+  display: none;
 }
