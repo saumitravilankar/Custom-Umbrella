@@ -35,14 +35,16 @@
   max-height: 350px;
 }
 
-.logo-box {
+#logo-print {
   position: absolute;
   width: 100px;
   height: 40px;
   z-index: 10;
-  border: 3px solid red;
   top: auto;
   bottom: 3rem;
+  object-fit: contain;
+  object-position: center;
+  display: none;
 }
 
 .interaction-box {
@@ -117,7 +119,7 @@
   display: flex;
   align-items: center;
   width: 80%;
-  padding: 5px 0;
+  padding: 10px 0;
   border: none;
   color: white;
   cursor: pointer;
@@ -134,6 +136,10 @@
   width: 40px;
 }
 
+.upload-icon-box.rotate {
+  animation: rotating 2s infinite linear;
+}
+
 #upload-text {
   flex: 1;
   letter-spacing: 0.1rem;
@@ -144,4 +150,27 @@
 
 #file-upload-input {
   display: none;
+}
+
+/* Animation Keyframes */
+
+@keyframes rotating {
+  0% {
+    rotate: 0deg;
+  }
+  20% {
+    rotate: 72deg;
+  }
+  40% {
+    rotate: 144deg;
+  }
+  60% {
+    rotate: 216deg;
+  }
+  80% {
+    rotate: 288deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
 }
